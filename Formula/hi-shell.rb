@@ -1,8 +1,8 @@
 class HiShell < Formula
   desc "An intelligent terminal assistant that translates natural language to shell commands"
   homepage "https://github.com/tufantunc/hi-shell"
-  url "https://github.com/tufantunc/hi-shell/releases/download/v0.2.0/hi-shell-aarch64-apple-darwin.tar.gz"
-  sha256 "0dbcefa3ca6612e080bb1df8ba2b7ea8d40e91043bf4ebabccdb53238bb272c7"
+  url "https://github.com/tufantunc/hi-shell/releases/download/v0.2.1/hi-shell-aarch64-apple-darwin.tar.gz"
+  sha256 "24af5a28439adcedad79cd58fbdba7a56d1109c0f510998b3d43a0c011de69fc"
   license "MIT"
 
   def install
