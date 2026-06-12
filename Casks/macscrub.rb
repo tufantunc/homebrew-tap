@@ -1,6 +1,6 @@
 cask "macscrub" do
-  version "1.4.0"
-  sha256 "c688e8bdb9f69246a9e7f9d12447147daca4ff9caae8e21c5a7ecefcaf53a7b4"
+  version "1.4.1"
+  sha256 "0777fe51c9a1f86e7b2d199ee9c359e73d3a297a2fad376ec51350034efacb38"
 
   url "https://github.com/tufantunc/MacScrub/releases/download/v#{version}/MacScrub-v#{version}.dmg"
   name "MacScrub"
