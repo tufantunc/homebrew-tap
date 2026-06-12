@@ -11,5 +11,9 @@ cask "macscrub" do
 
   app "MacScrub.app"
 
-  zap trash: "~/Library/Preferences/com.macscrub.app.plist"
+  zap trash: [
+    "~/Library/Caches/com.macscrub.app",
+    "~/Library/Preferences/com.macscrub.app.plist",
+    "~/Library/Saved Application State/com.macscrub.app.savedState",
+  ]
 end
