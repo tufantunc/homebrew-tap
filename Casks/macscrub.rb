@@ -1,9 +1,13 @@
 # Generated from packaging/macscrub.rb in tufantunc/MacScrub — edit there, not here.
 # The version and sha256 values are substituted at release time by the
-# "Update Homebrew tap" step in .github/workflows/release.yml.
+# "Update Homebrew tap" step in .github/workflows/release.yml. That substitution is
+# whole-file, comments included, so don't spell the placeholder token names anywhere
+# in here — including in a comment — or they get rewritten too.
+#
+# Lint a rendered copy before tagging: brew style on the output must be clean.
 cask "macscrub" do
-  version "1.5.0"
-  sha256 "64fea2460320bbb0657112d5181dc313fdf4b5d195c9e6b1c304516dae915340"
+  version "1.6.0"
+  sha256 "c8371244f8f402b098f9b90430edbe7a37afd0538e3bb5ba6cfd652749059c73"
 
   url "https://github.com/tufantunc/MacScrub/releases/download/v#{version}/MacScrub-v#{version}.dmg"
   name "MacScrub"
