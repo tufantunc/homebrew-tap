@@ -7,12 +7,14 @@ cask "macscrub" do
 
   url "https://github.com/tufantunc/MacScrub/releases/download/v#{version}/MacScrub-v#{version}.dmg"
   name "MacScrub"
-  desc "Temporary input lock for safely cleaning your Mac keyboard and trackpad"
+  # No "Mac"/"macOS" here — `brew style`'s Cask/Desc cop rejects naming the platform.
+  desc "Temporary input lock for safely cleaning your keyboard and trackpad"
   homepage "https://github.com/tufantunc/MacScrub"
 
-  # `>= :sonoma`, not a bare `:sonoma` — a bare symbol is an EXACT macOS match, so it
-  # refuses to install on Sequoia and later. The app's deployment target is macOS 14.
-  depends_on macos: ">= :sonoma"
+  # A bare symbol is the MINIMUM macOS release, not an exact match: Cask::DSL::DependsOn
+  # parses `macos:` with an implicit `>=` comparator. The `">= :sonoma"` string form means
+  # the same thing but is deprecated — `brew style` tells you to write it exactly like this.
+  depends_on macos: :sonoma
 
   app "MacScrub.app"
 
